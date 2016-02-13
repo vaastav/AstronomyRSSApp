@@ -1,29 +1,59 @@
 package com.vaastavanand.rssfeed.data;
 /**
- * Created by vaastav on 27/06/15.
+ * @file RssItem.java
+ *
+ * @author vaastav on 27/06/15.
+ */
+
+/**
+ * Object that holds information about RSS Feed Item
+ *
+ * @var m_title A String that holds the title of the RSS Feed Item
+ * @var m_link A String that holds the link associated with the RSS Feed Item
  */
 public class RssItem {
-    private String title;
-    private String link;
+    private String m_title;
+    private String m_link;
 
+    /**
+     * Returns the title of the RSS Feed Item
+     * @return m_title
+     */
     public String getTitle(){
-        return title;
+        return m_title;
     }
+
+    /**
+     * Returns the link of the RSS Feed Item
+     * @return m_link
+     */
     public String getLink(){
-        return link;
+        return m_link;
     }
 
-    public void setLink(String link) {
-        this.link = link;
+    /**
+     * Sets the link associated with the RSS Feed Item
+     * @param link The link associated with the RSS Feed Item
+     */
+    public void setLink( String link ) {
+        m_link = link;
     }
 
-    public void setTitle(String title){
-        this.title = title;
+    /**
+     * Sets the title of the RSS Feed Item
+     * @param title Title of the RSS Feed Item
+     */
+    public void setTitle( String title ) {
+        m_title = title;
     }
 
     @Override
+    /**
+     * String representation of the RSS Feed Item
+     * @note The String representation is just the title of the item
+     */
     public String toString(){
-        return title;
+        return m_title;
     }
 
 }
