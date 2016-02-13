@@ -35,7 +35,7 @@ public class RSSReaderActivity extends ListActivity {
 
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rssreader);
+        setContentView(R.layout.activity_postlist);
         local = this;
         GetRSSDataTask task = new GetRSSDataTask();
         task.execute("http://www.nasa.gov/rss/dyn/solar_system.rss");
